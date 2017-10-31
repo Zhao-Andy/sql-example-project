@@ -1,24 +1,10 @@
-# README
+Setup, with Terminal/Bash/whatever:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `git clone`
+2. One liner: `rails db:create;rails db:migrate;rails db:seed`
+2. `rails db:create`
+3. `rails db:migrate`
+4. `rails db:seed`
+5. Query away! Note that instead of `follower_id`, the column is `user_id`. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Calling `.count` on the query should return 49.
